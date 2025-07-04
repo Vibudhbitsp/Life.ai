@@ -1,23 +1,14 @@
-import 'package:go_router/go_router.dart';
+import 'package:auto_route/auto_route.dart';
 import '../../features/splash/presentation/pages/splash_page.dart';
-import '../../shared/widgets/error_page.dart';
+import '../../features/onboarding/presentation/pages/onboarding_page.dart';
 
-class AppRouter {
-  static const String splash = '/';
+part 'app_router.gr.dart';
 
-  static final GoRouter router = GoRouter(
-    initialLocation: splash,
-    debugLogDiagnostics: true,
-    routes: [
-      GoRoute(
-        path: splash,
-        name: 'splash',
-        builder: (context, state) => const SplashPage(),
-      ),
-    ],
-    errorBuilder: (context, state) => ErrorPage(
-      error: state.error?.toString(),
-      onRetry: () => context.go(splash),
-    ),
-  );
+@AutoRouterConfig(replaceInRouteName: 'Page,Route')
+class AppRouter extends RootStackRouter {
+  @override
+  List<AutoRoute> get routes => [
+    AutoRoute(page: SplashRoute.page, initial: true),
+    AutoRoute(page: OnboardingRoute.page),
+  ];
 } 
