@@ -119,20 +119,5 @@ flutter build web
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- Flutter team for the amazing framework
-- Material Design team for the design system
-- All contributors and supporters
-
-## Support
-
-If you have any questions or need help, please open an issue on GitHub or contact us at support@life-ai.com.
-
----
 
 Made with ❤️ by the Life.ai team
