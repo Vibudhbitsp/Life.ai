@@ -10,7 +10,6 @@ Your AI-powered life companion - A Flutter app designed to help you organize tas
 - 🤖 **AI Insights** - Get personalized recommendations and insights
 - 📊 **Analytics Dashboard** - Visualize your progress and productivity
 - 🌙 **Dark/Light Theme** - Beautiful themes that adapt to your preference
-- 📱 **Cross-Platform** - Works on iOS, Android, and web
 
 ## Getting Started
 
@@ -61,17 +60,15 @@ lib/
 This project follows a **Feature-Driven Architecture** with:
 
 - **Clean Architecture** principles
-- **Provider** for state management
-- **Go Router** for navigation
-- **Hive** for local storage
+- **Riverpod Provider** for state management
+- **Auto Route** for navigation
 - **Material Design 3** for UI components
 
 ## Dependencies
 
 ### Core Dependencies
-- `provider` - State management
-- `go_router` - Navigation
-- `hive` - Local database
+- `riverpodprovider` - State management
+- `auto_route` - Navigation
 - `shared_preferences` - Key-value storage
 - `http` & `dio` - HTTP client
 - `intl` - Internationalization
