@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
+import 'package:auto_route/auto_route.dart';
 
 import '../../../../core/theme/app_theme.dart';
 import '../../../../core/routes/app_router.dart';
 
+@RoutePage()
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
 
@@ -74,8 +75,8 @@ class _SplashPageState extends State<SplashPage>
   }
 
   void _navigateToNext() {
-    // TODO: Implement navigation to your first feature or home page
-    // For now, do nothing or show a placeholder
+    // Navigate to onboarding page
+    context.router.replace(const OnboardingRoute());
   }
 
   @override

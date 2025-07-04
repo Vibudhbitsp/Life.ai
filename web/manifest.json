@@ -1,6 +1,6 @@
 {
-    "name": "life_ai",
-    "short_name": "life_ai",
+    "name": "Life.ai",
+    "short_name": "Life.ai",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
